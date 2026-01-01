@@ -1,104 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>TenderFit — Find tenders worth your time</title>
+  <meta name="description" content="Stop reading thousands of tenders. Keep only the dozen that matter. Managed tender shortlisting tailored to your business."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 <nav>
-  <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px;">
-    <div style="font-weight:900; letter-spacing:0.4px;">
-      <a href="index.html" style="color:white; text-decoration:none;">TenderFit</a>
-      <span class="small" style="margin-left:10px;">AI tender sieve for solo operators</span>
-    </div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="legal.html">Legal</a>
+  <div class="container">
+    <div class="navbar">
+      <div class="brand">
+        <a href="index.html">TenderFit</a>
+        <small>tender shortlisting, done for you</small>
+      </div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="legal.html">Legal</a>
+      </div>
     </div>
   </div>
 </nav>
 
-<header style="padding: 56px 0 22px 0;">
+<header class="hero">
   <div class="container">
-    <h1 style="margin:0; font-size: 42px;">Stop reading 2,000 tenders. Keep the 20 that matter.</h1>
-    <p class="small" style="max-width: 820px; margin-top: 12px;">
-      TenderFit is a CPU-friendly local pipeline that screens TED-style tender folders (XML/PDF) and ranks them:
-      <span class="badge g">G</span> <span class="badge gy">GY</span> <span class="badge y">Y</span> <span class="badge r">R</span>.
-      It outputs an English summary, red flags, and next steps — and can rename folders automatically.
+    <div class="kicker">Managed tender shortlisting</div>
+    <h1>Stop reading thousands of tenders. Keep only the dozen that matter.</h1>
+    <p class="lead">
+      TenderFit is a done‑for‑you service: you tell us what you do and what you refuse to do.
+      We return a short, strict shortlist of tenders that actually fit your business — with plain‑English summaries
+      so you can decide fast.
     </p>
 
-    <div class="hero-cta">
-      <a class="btn" href="pricing.html">Get TenderFit</a>
+    <div class="cta">
+      <a class="btn" href="pricing.html">One‑time setup</a>
       <a class="btn secondary" href="#how">How it works</a>
-      <span class="small">Working languages: English / Croatian only (strict).</span>
     </div>
 
-    <div class="kpi">
+    <div class="badges">
+      <span class="pill">Relevant only</span>
+      <span class="pill">Low time waste</span>
+      <span class="pill">Plain‑English summaries</span>
+      <span class="pill">You stay in control</span>
+    </div>
+
+    <div class="grid">
       <div class="card">
-        <div style="font-weight:900;">Fast sieve</div>
-        <div class="small">XML heuristics first; LLM only on candidates.</div>
+        <h3>Strict shortlists</h3>
+        <p>You receive only high‑fit opportunities, not hundreds of “maybe” items.</p>
       </div>
       <div class="card">
-        <div style="font-weight:900;">Solo-first</div>
-        <div class="small">Bias toward low paperwork + digital deliverables.</div>
+        <h3>Business‑specific</h3>
+        <p>We tune to your niche, constraints, geography, and delivery model.</p>
       </div>
       <div class="card">
-        <div style="font-weight:900;">Local & private</div>
-        <div class="small">Runs on your laptop CPU (Ollama supported).</div>
+        <h3>Fast decisions</h3>
+        <p>Each shortlisted tender comes with a clear summary and quick next steps.</p>
       </div>
       <div class="card">
-        <div style="font-weight:900;">Action output</div>
-        <div class="small">Summary + red flags + next steps per folder.</div>
+        <h3>Private by default</h3>
+        <p>We don’t run ads, sell data, or build user profiles.</p>
       </div>
     </div>
   </div>
 </header>
 
-<section id="how" style="padding: 26px 0 8px 0;">
+<section id="how" class="section">
   <div class="container">
-    <h2 style="margin:0 0 10px 0;">How it works</h2>
-    <ol class="small" style="line-height:1.7;">
-      <li><b>Parse:</b> reads each tender folder (XML/PDF/meta) and builds a compact “tender card”.</li>
-      <li><b>Sieve:</b> cheap rules (CPV + keywords + language + deliverable type) reject most tenders instantly.</li>
-      <li><b>Judge:</b> LLM reviews only survivors and returns strict JSON: label, why, English summary, red flags.</li>
-      <li><b>Organize:</b> writes <span class="code">summary_en.txt</span> + <span class="code">llm_verdict.json</span>, optionally renames folders.</li>
+    <h2>How it works</h2>
+    <ol>
+      <li><b>Tell us your business.</b> What you sell, what you can deliver, where you can work, and what you won’t do.</li>
+      <li><b>We set your TenderFit profile.</b> A strict filter definition tailored to your constraints.</li>
+      <li><b>You get a shortlist.</b> Only the tenders that match — with plain‑English summaries and clear next steps.</li>
     </ol>
 
-    <h3 style="margin-top: 18px;">What TenderFit considers “high leverage”</h3>
-    <ul class="small" style="line-height:1.7;">
-      <li>Digital-only deliverables: software, web platform, SaaS, cybersecurity, data/AI, documentation, training.</li>
-      <li>Low paperwork, small-scope, remote-friendly. If unsure between Y and R, it chooses R.</li>
-      <li>If tender language is not English or Croatian → auto R.</li>
-      <li>If country ≠ Croatia and permanent physical presence is required → downgrade (or reject).</li>
+    <hr class="sep"/>
+
+    <h2>What you pay for</h2>
+    <ul>
+      <li>Time saved: no more scanning noise.</li>
+      <li>A strict “fit” standard aligned with your reality.</li>
+      <li>Readable summaries that let you decide in minutes.</li>
     </ul>
 
-    <h3 style="margin-top: 18px;">Typical output</h3>
-    <div class="code">LABEL: GY
-WHY: Digital service; English allowed; one on-site workshop; manageable submission...
-ENGLISH_SUMMARY: ...
-RED_FLAGS: [...]
-NEXT_STEPS: [...]
-</div>
-  </div>
-</section>
-
-<section style="padding: 26px 0 44px 0;">
-  <div class="container">
-    <h2 style="margin:0 0 10px 0;">Contact</h2>
-    <p class="small">Want a demo run on your folder structure? Email: <b>hello@tenderfit.eu</b></p>
-    <p class="small">If you prefer, replace that email with your own before publishing.</p>
-  </div>
-</section>
-
-<div class="footer container">
-  <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
-    <div>© 2026 TenderFit. Built for speed, not hype.</div>
-    <div>
-      <a href="legal.html" style="color:white;">Privacy & Terms</a>
+    <div class="notice" style="margin-top:14px;">
+      <b>Note:</b> TenderFit is a filtering assistant service. Final compliance and submissions remain your responsibility.
     </div>
+
+    <hr class="sep"/>
+
+    <h2>Contact</h2>
+    <p class="lead" style="margin-top:8px;">
+      Email: <b>hello@tenderfit.eu</b><br/>
+      Send 2–3 examples of tenders you would accept and 2–3 you would reject — we tune faster.
+    </p>
+  </div>
+</section>
+
+<div class="footer">
+  <div class="container" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+    <div>© 2026 TenderFit</div>
+    <div><a href="legal.html">Privacy & Terms</a></div>
   </div>
 </div>
 </body>
